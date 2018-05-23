@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:background="@drawable/list_selector"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp" >
+
+        <!--  ListRow Left sied Thumbnail image -->
+        <LinearLayout
+            android:id="@+id/thumbnailBeverage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp">
+
+            <ImageView
+                android:id="@+id/imageBeverageUnavailable"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/beverage_image_content_description" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/containerTextBeverage"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_toLeftOf="@id/thumbnailBeverage"
+            android:layout_toStartOf="@id/thumbnailBeverage">
+
+            <TextView
+                android:id="@+id/textBeverageUnavailable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:text="@string/title_beverage_detail"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

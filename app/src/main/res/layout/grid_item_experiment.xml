@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#50f1f1f1">
+
+    <View
+        android:id="@+id/dummyCenterLine"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible"/>
+
+    <ImageView
+        android:id="@+id/beverageImage"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/beverage_image_content_description"/>
+
+    <TextView
+        android:id="@+id/beverageName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:textSize="17sp"
+        android:textColor="#000000"
+        android:shadowColor="#fff"
+        android:shadowRadius="3"
+        android:shadowDx="2"
+        android:shadowDy="1"
+        android:text="@string/ok"
+        android:background="#201E88E5"/>
+
+    <TextView
+        android:id="@+id/itemCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginEnd="5dp"
+        android:textSize="27sp"
+        android:visibility="invisible"
+        android:textColor="@color/white"
+        android:background="@drawable/oval_textview"/>
+
+    <View
+        android:id="@+id/leftClickSurface"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@id/dummyCenterLine"
+        android:layout_toStartOf="@id/dummyCenterLine"
+        android:background="@drawable/remove_view_selector"
+        android:clickable="true"/>
+
+    <View
+        android:id="@+id/rightClickSurface"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@id/dummyCenterLine"
+        android:layout_toEndOf="@id/dummyCenterLine"
+        android:background="@drawable/add_view_selector"
+        android:clickable="true"/>
+
+</RelativeLayout>

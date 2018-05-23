@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mkitbs.ekitchen.app">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ecafe_icon3"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SelectionActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_selection"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mkitbs.ekitchen.app.MainActivity" />
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".AboutActivity"
+            android:label="@string/action_about"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mkitbs.ekitchen.app.MainActivity" />
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/action_settings"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mkitbs.ekitchen.app.MainActivity" />
+        </activity>
+        <activity
+            android:name=".HistoryActivity"
+            android:parentActivityName=".SettingsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mkitbs.ekitchen.app.SettingsActivity" />
+        </activity>
+        <activity
+            android:name=".kitchen.KitchenOrderListActivity"
+            android:label="@string/title_kitchenorder_list"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".kitchen.KitchenOrderDetailActivity"
+            android:label="@string/title_kitchenorder_detail"
+            android:parentActivityName=".kitchen.KitchenOrderListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mkitbs.ekitchen.app.kitchen.KitchenOrderListActivity" />
+        </activity>
+        <activity
+            android:name=".kitchen.BeverageListActivity"
+            android:label="@string/title_beverage_list"
+            android:parentActivityName=".kitchen.KitchenOrderListActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mkitbs.ekitchen.app.kitchen.KitchenOrderListActivity" />
+        </activity>
+        <activity
+            android:name=".kitchen.BeverageDetailActivity"
+            android:label="@string/title_beverage_detail"
+            android:parentActivityName=".kitchen.BeverageListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mkitbs.ekitchen.app.kitchen.BeverageListActivity" />
+        </activity>
+        <activity
+            android:name=".kitchen.ConsumptionActivity"
+            android:label="@string/hall_consumption"
+            android:parentActivityName=".kitchen.KitchenOrderListActivity"
+            android:screenOrientation="landscape">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mkitbs.ekitchen.app.kitchen.KitchenOrderListActivity" />
+        </activity>
+        <activity
+            android:name=".hall.OverviewActivity"
+            android:label="@string/title_activity_overview"
+            android:screenOrientation="landscape"/>
+    </application>
+
+</manifest>

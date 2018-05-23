@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:divider="?android:attr/dividerHorizontal"
+    android:orientation="horizontal"
+    android:showDividers="middle"
+    android:weightSum="100"
+    tools:context="mkitbs.ekitchen.app.kitchen.BeverageListActivity">
+
+    <!--
+    This layout is a two-pane layout for the Beverages
+    master/detail flow.
+    
+    -->
+
+    <RelativeLayout
+        android:id="@+id/masterContainer"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="35">
+
+        <LinearLayout
+            android:id="@+id/bottomBoxKitchen"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:padding="5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/greyPrimaryLight"
+            android:orientation="horizontal"
+            style="?android:attr/buttonBarButtonStyle">
+
+            <Button
+                android:id="@+id/cancelButtonKitchen"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:layout_marginEnd="3dp"
+                android:layout_weight="1"
+                android:text="@string/btn_cancel"
+                style="@style/btnStyleRed"/>
+
+            <Button
+                android:id="@+id/sendButtonKitchen"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginStart="3dp"
+                android:layout_weight="1"
+                android:text="@string/btn_send"
+                style="@style/btnStyleGreen"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/beverageListTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:textSize="20sp"
+            android:textColor="@color/colorAccent"
+            android:padding="5dp"/>
+
+        <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/beverage_list"
+            android:name="mkitbs.ekitchen.app.kitchen.BeverageListFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/bottomBoxKitchen"
+            android:layout_below="@id/beverageListTitle"
+            android:background="@color/greyPrimaryLight"
+            app:layoutManager="LinearLayoutManager"
+            tools:context="mkitbs.ekitchen.app.kitchen.BeverageListActivity"
+            tools:listitem="@layout/order_list_item" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/beverage_detail_container"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_weight="65" />
+
+</LinearLayout>

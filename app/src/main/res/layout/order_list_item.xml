@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:background="@color/white"
+    android:padding="3dp">
+
+    <Button
+        android:id="@+id/removeButton"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginStart="7dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        style="@style/btnMinus"/>
+
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginEnd="7dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        style="@style/btnPlus"/>
+
+
+    <TextView
+        android:id="@+id/beverageCounter"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@id/addButton"
+        android:layout_toStartOf="@id/addButton"
+        android:gravity="center_horizontal|center_vertical"
+        android:textSize="40sp"
+        android:textColor="@color/md_grey_600"/>
+
+    <TextView
+        android:id="@+id/beverageTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/removeButton"
+        android:layout_toEndOf="@id/removeButton"
+        android:layout_toLeftOf="@id/beverageCounter"
+        android:layout_toStartOf="@id/beverageCounter"
+        android:gravity="center_vertical"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:paddingLeft="10dp"
+        android:paddingStart="10dp"
+        android:paddingTop="3dp"
+        android:textColor="@color/md_grey_600"/>
+
+</RelativeLayout>

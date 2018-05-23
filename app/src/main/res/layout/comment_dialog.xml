@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/your_company_is"
+        android:textSize="17sp"/>
+
+    <TextView
+        android:id="@+id/textViewCompany"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_vertical"
+        android:textSize="17sp"
+        android:background="@color/white"/>
+
+    <Spinner
+        android:id="@+id/spinnerCompanyWaiter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/custom_spinner_selector"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/send_dialog_comment"
+        android:textSize="17sp"/>
+
+    <EditText
+        android:id="@+id/commentEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start|top"
+        android:scrollbars="vertical"
+        android:lines="2"
+        android:maxLength="100"
+        android:textSize="17sp"
+        android:hint="@string/comment_hint"
+        android:layout_marginBottom="20dp"/>
+
+    <LinearLayout
+        android:id="@+id/bottomBoxCommentDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:padding="2dp"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cancelButtonCommentDialog"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="@string/btn_cancel"
+            style="@style/btnStyleRed"/>
+
+        <Button
+            android:id="@+id/sendButtonCommentDialog"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btn_send"
+            style="@style/btnStyleGreen"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

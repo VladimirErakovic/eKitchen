@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/beverageImage"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/beverage_image_content_description"/>
+
+    <TextView
+        android:id="@+id/beverageName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:textSize="17sp"
+        android:textColor="#000000"
+        android:shadowColor="#fff"
+        android:shadowRadius="3"
+        android:shadowDx="2"
+        android:shadowDy="1"
+        android:text="@string/ok"
+        android:background="#201E88E5"/>
+
+    <ImageView
+        android:id="@+id/availableImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="end|top"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/beverage_image_content_description"
+        android:src="@drawable/ok"
+        android:visibility="invisible"/>
+
+</FrameLayout>

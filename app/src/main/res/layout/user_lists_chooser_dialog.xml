@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="5"
+    android:background="@color/md_blue_50">
+
+    <LinearLayout
+        android:id="@+id/listsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="horizontal">
+
+        <ListView
+            android:id="@+id/userCompanyList"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:divider="@color/white"
+            android:dividerHeight="1dp"/>
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"/>
+
+        <ListView
+            android:id="@+id/userSectorList"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:divider="@color/white"
+            android:dividerHeight="1dp"/>
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"/>
+
+        <ListView
+            android:id="@+id/userEmployeeList"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:divider="@color/white"
+            android:dividerHeight="1dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="20dp"
+        android:gravity="center_vertical|center_horizontal">
+
+        <Button
+            android:id="@+id/cancelButtonDialog"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="@string/btn_cancel"
+            style="@style/btnStyleRed"/>
+
+        <Button
+            android:id="@+id/sendButtonDialog"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_take"
+            style="@style/btnStyleGreen"/>
+
+    </LinearLayout>
+
+</LinearLayout>

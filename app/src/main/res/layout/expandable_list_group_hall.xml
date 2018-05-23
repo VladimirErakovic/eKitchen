@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/expListGroupLayoutHall"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:padding="5dp" >
+
+    <!--  ListRow Left sied Thumbnail image -->
+    <LinearLayout
+        android:id="@+id/thumbnailStatusOverviewHall"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="3dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp">
+
+        <ImageView
+            android:id="@+id/imageStatusIconOverviewHall"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:gravity="top|center_horizontal"
+            android:contentDescription="@string/status_image_content_description" />
+
+        <TextView
+            android:id="@+id/textStatusOverviewHall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom|center_horizontal"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/containerTextOverviewHall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_toLeftOf="@id/thumbnailStatusOverviewHall"
+        android:layout_toStartOf="@id/thumbnailStatusOverviewHall">
+
+        <TextView
+            android:id="@+id/textDateTimeOverviewHall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/kitchenorder_datetime"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginBottom="10dp"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/textCompanyOverviewHall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/your_company_is"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

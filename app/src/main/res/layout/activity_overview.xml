@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_overview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="mkitbs.ekitchen.app.hall.OverviewActivity">
+
+    <ExpandableListView
+        android:id="@+id/listExpOrdersHall"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_above="@+id/buttonBox"
+        android:divider="@color/md_grey_300"
+        android:dividerHeight="1dp"
+        android:childDivider="@color/white"/>
+
+    <LinearLayout
+        android:id="@+id/buttonBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp"
+        android:background="#00ffffff"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/callKitchenButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/hall_call_btn"
+            android:textSize="18sp"
+            android:drawableLeft="@drawable/hall_new_message2"
+            android:drawableStart="@drawable/hall_new_message2"
+            android:clickable="true"
+            style="@style/btnStyleFlatMain"/>
+
+
+        <Button
+            android:id="@+id/cleanHallButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:text="@string/hall_meeting_end_btn"
+            android:textSize="18sp"
+            android:drawableLeft="@drawable/hall_meeting_end2"
+            android:drawableStart="@drawable/hall_meeting_end2"
+            android:clickable="true"
+            style="@style/btnStyleFlatMain"/>
+
+        <Button
+            android:id="@+id/makeOrderButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:text="@string/hall_make_order_btn"
+            android:textSize="18sp"
+            android:drawableLeft="@drawable/hall_new_order2"
+            android:drawableStart="@drawable/hall_new_order2"
+            android:clickable="true"
+            style="@style/btnStyleFlatMain"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/expListGroupLayoutUser"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:padding="5dp" >
+
+    <!--  ListRow Left sied Thumbnail image -->
+    <LinearLayout
+        android:id="@+id/thumbnailStatusHistoryUser"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="3dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp">
+
+        <ImageView
+            android:id="@+id/imageStatusIconHistoryUser"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:gravity="top|center_horizontal"
+            android:contentDescription="@string/status_image_content_description" />
+
+        <TextView
+            android:id="@+id/textStatusHistoryUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom|center_horizontal"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/containerTextHistoryUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_toLeftOf="@id/thumbnailStatusHistoryUser"
+        android:layout_toStartOf="@id/thumbnailStatusHistoryUser">
+
+        <TextView
+            android:id="@+id/textDateTimeHistoryUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/kitchenorder_datetime"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/textRoomHistoryUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/kitchenorder_room"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/textLocationHistoryUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/kitchenorder_location"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

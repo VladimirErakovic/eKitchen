@@ -1,0 +1,206 @@
+<resources>
+    <string name="app_name">eCafe</string>
+    <string name="e">e</string>
+    <string name="cafe">CAFE</string>
+    <string name="action_history">Pregled porudžbina</string>
+    <string name="action_settings">Podešavanja</string>
+    <string name="action_about">O aplikaciji</string>
+    <string name="no_internet_connection">Nema internet konekcije.</string>
+    <string name="server_unavailable_title">Server je nedostupan.</string>
+    <string name="action_logout">Odjavi se</string>
+    <string name="title_activity_selection">Dostupna pića</string>
+    <string name="title_activity_overview">Pregled današnjih porudžbina</string>
+    <string name="loading_msg">Učitavanje podataka&#8230;</string>
+    <string name="no_company_network">Morate biti na kompanijskoj mreži.</string>
+    <string name="btn_delete_all">Obriši sve</string>
+    <string name="btn_change_mode">Mod izmene</string>
+    <string name="btn_update">Ažuriraj</string>
+    <string name="btn_cancel">Odustani</string>
+    <string name="btn_send">Poruči</string>
+    <string name="btn_take">Preuzmi</string>
+    <string name="btn_send_msg">Pošalji</string>
+    <string name="location_not_set">Lokacija nije izabrana&#8230;</string>
+    <string name="delete_dialog_msg">Obrisati stavku?</string>
+    <string name="delete_user_dialog_msg">Želite da obrišete korisnika aplikacije sa telefona?</string>
+    <string name="yes">Da</string>
+    <string name="no">Ne</string>
+    <string name="ok">U redu</string>
+    <string name="no_beverage_entered">Niste uneli ni jedno piće.</string>
+    <string name="error_msg">Došlo je do greške, pokušajte ponovo.</string>
+    <string name="just_error_msg">Došlo je do greške.</string>
+    <string name="multiple_configurations_error">Upozorenje! Konfiguraciona tabela ima više unosa. Obavestite Vašeg administratora.</string>
+    <string name="error_call_admin">Pozovite administratora aplikacije.</string>
+    <string name="multiple_user_roles_error">Upozorenje! Vašem korisniku je dodeljeno više uloga. Pozovite administratora aplikacije.</string>
+    <string name="multiple_user_error">Upozorenje! Postoji više korisnika sa unetim korisničkim imenom. Pozovite administratora aplikacije.</string>
+    <string name="role_id_error">Greška! Id broj korisnika se ne slaže sa Id brojem u ulogama!</string>
+    <string name="unknown_role_error">Greška! Uloga korisnika nije definisana u konfiguracionoj tabeli.</string>
+
+    <string name="service_login">/ECafe/api/User/Login</string>
+    <string name="get_all_company">/ECafe/api/Company/GetAllCompany</string>
+    <string name="get_all_location">/ECafe/api/Location/GetAllLocation</string>
+    <string name="get_all_company_location">/ECafe/api/CompanyLocation/GetAllCompanyLocation</string>
+    <string name="get_all_room">/ECafe/api/Room/GetAllRoom</string>
+    <string name="get_all_kitchen_room">/ECafe/api/KitchenRoom/GetAllKitchenRoom</string>
+    <string name="get_all_kitchen">/ECafe/api/Kitchen/GetAllKitchen</string>
+    <string name="get_kitchen_beverage">/ECafe/api/BeverageCategory/GetKitchenBeverage/</string>
+    <string name="get_kitchen_waiter">/ECafe/api/User/GetKitchenWaiter/</string>
+    <string name="insert_order_header">/ECafe/api/OrderHeader/InsertOrderHeader</string>
+    <string name="insert_order_item">/ECafe/api/OrderItem/InsertOrderItem</string>
+    <string name="update_order_header">/ECafe/api/OrderHeader/UpdateOrderHeader</string>
+    <string name="update_beverage_availability">/ECafe/api/Beverage/UpdateBeverageAvailability</string>
+    <string name="customer_status_notification">/ECafe/api/OrderHeader/CustomerStatusNotification/</string>
+    <string name="get_kitchen_beverage_available">/ECafe/api/BeverageCategory/GetKitchenBeverageAvailable/</string>
+    <string name="get_all_order_header">/ECafe/api/OrderHeader/GetAllOrderHeader/</string>
+    <string name="view_user">/ECafe/api/User/ViewUser/</string>
+    <string name="hall_overview">/ECafe/api/OrderHeader/HallOverview/</string>
+    <string name="insert_user_call">/ECafe/api/UserCall/InsertUserCall</string>
+    <string name="get_new_user_calls">/ECafe/api/UserCall/GetNewUserCalls/</string>
+    <string name="update_user_calls">/ECafe/api/UserCall/UpdateUserCall</string>
+    <string name="view_configuration">/ECafe/api/Configuration/ViewConfiguration/</string>
+    <string name="history">/ECafe/api/OrderHeader/History/</string>
+    <string name="consumption">/ECafe/api/OrderHeader/ConsumptionReport/</string>
+
+    <string name="please_login">Molimo prijavite se</string>
+    <string name="server_address">Adresa servera:</string>
+    <string name="server_address_start">http://</string>
+    <string name="username">Korisničko ime:</string>
+    <string name="password">Lozinka:</string>
+    <string name="login_btn">PRIJAVI SE</string>
+    <string name="enter_credentials_msg">Molimo unesite adresu servera i Vaše korisničko ime i lozinku.</string>
+    <string name="service_login_error">Došlo je do greške, proverite adresu servera.</string>
+
+    <string name="choose_location">Izaberite mesto/lokaciju:</string>
+    <string name="choose_room">Izaberite prostoriju:</string>
+    <string name="choose_company">Izaberite kompaniju:</string>
+    <string name="send_dialog_comment">Napomena:</string>
+    <string name="send_dialog_title">Slanje porudžbine</string>
+    <string name="call_kitchen_dialog_title">Slanje poruke kuhinji</string>
+    <string name="location_dialog_title">Odabir lokacije</string>
+    <string name="order_sent_successfully">Vaša porudžbina je uspešno prosleđena.</string>
+    <string name="order_status_changed">Vaša porudžbina je preuzeta.</string>
+    <string name="your_company_is">Vaša kompanija je:</string>
+    <string name="comment_hint">Ovde možete unetu napomenu ili komentar&#8230;</string>
+    <string name="list_cleaned">Lista je obrisana jer ste promenili lokaciju i kuhinju</string>
+    <string name="location_changed">Promenili ste lokaciju i kuhinju</string>
+
+    <string name="delete_all_dialog_msg">Brišete celu listu?</string>
+    <string name="exit_app_dialog_msg">Izlazite iz aplikacije?</string>
+
+    <string name="about_title">eCafe aplikacija za Android</string>
+    <string name="loged_as">Prijavljeni ste kao:</string>
+    <string name="mkitbs">MK IT Business Solutions, 2016.</string>
+    <string name="dev_team">Razvojni tim: \nDragan Voćkić (Menadžer projekta), \nIvan Drljača (Baza podataka i Web servisi) i \nVladimir Eraković (Android aplikacija)</string>
+
+    <string name="default_location">Postavite podrazumevanu lokaciju(mesto) sa koje poručujete:</string>
+    <string name="spinner_default_location">Izaberite lokaciju(mesto)</string>
+    <string name="default_room">Postavite podrazumevanu prostoriju iz koje poručujete:</string>
+    <string name="spinner_default_room">Izaberite prostoriju</string>
+    <string name="want_notifications">Da li želite obaveštenja o statusu Vaše porudžbine?</string>
+    <string name="reset_btn_title">Obrišite sa telefona podrazumevanu lokaciju i prostoriju:</string>
+    <string name="reset_btn">Reset lokacije</string>
+    <string name="settings_saved">Podešavanja sačuvana.</string>
+    <string name="fab_settings_title">Izaberite redosled funkcija dugmeta za dodavanje pića:</string>
+    <string name="fab_all">Klik - više (Zadržani pritisak - jedno)</string>
+    <string name="fab_single">Klik - jedno (Zadržani pritisak - više)</string>
+
+    <string name="title_kitchenorder_list">Kuhinja</string>
+    <string name="title_kitchenorder_detail">Detalji porudžbine</string>
+    <string name="kitchenorder_datetime">Vreme:</string>
+    <string name="kitchenorder_room">Prostorija:</string>
+    <string name="kitchenorder_location">Lokacija:</string>
+    <string name="kitchenorder_username">Korisnik:</string>
+    <string name="kitchenorder_waiter">Konobar:</string>
+
+    <string name="status_new">NOVA</string>
+    <string name="status_taken">PREUZETA</string>
+    <string name="status_delivered">ISPORUČENA</string>
+    <string name="status_for_cleanup">ZA POKUPITI</string>
+    <string name="status_closed">ZATVORENA</string>
+    <string name="status_canceled">OTKAZANA</string>
+    <string name="delivered_dialog_title">Isporuka porudžbine</string>
+    <string name="delivered_dialog_text">Potvrdite isporuku porudžbine.</string>
+    <string name="clear_dialog_title">Završetak sastanka</string>
+    <string name="clear_dialog_text">Potvrdite raspremanje prostorije.</string>
+
+    <string name="update_dialog_title">Ažuriranje statusa pića</string>
+    <string name="update_dialog_text">Potvrdite ažuriranje statusa pića iz liste.</string>
+
+    <string name="logout_dialog_title">Odjava sa uređaja</string>
+
+    <string name="kitchen_place_order">Napravi porudžbinu</string>
+    <string name="sending_data">Slanje podataka&#8230;</string>
+
+    <string name="title_beverage_list">Kuhinja</string>
+    <string name="title_beverage_detail">Liste pića</string>
+    <string name="title_kitchen_ordering">Kreiranje nove porudžbine</string>
+    <string name="title_kitchen_status_change">Ažuriranje dostupnosti pića</string>
+    <string name="beverage_image_content_description">Slika pića</string>
+    <string name="status_image_content_description">Status</string>
+
+    <string name="take_order_dialog_title">Preuzimanje porudžbine</string>
+    <string name="take_order_waiter">Molimo identifikujte se:</string>
+    <string name="take_order_waiter_error">Niste odabrali konobara. Molimo identifikujte se.</string>
+
+    <string name="grid_mode">Izmena statusa pića</string>
+    <string name="send_statuses">Pošalji izmene</string>
+    <string name="send_statuses_success_msg">Statusi pića su uspešno ažurirani.</string>
+    <string name="beverage_status_list_title">Lista nedostupnih pića</string>
+
+    <string name="order_number">Porudžbina:</string>
+    <string name="list_is_empty">Lista je prazna</string>
+
+    <string name="hall_call_btn">Poruka kuhinji</string>
+    <string name="hall_meeting_end_btn">Kraj sastanka</string>
+    <string name="hall_make_order_btn">Nova porudžbina</string>
+    <string name="hall_call_msg_success">Poruka kuhinji je poslata.</string>
+
+    <string name="hall_call_msg_text">Poruka:</string>
+    <string name="hall_call_hint_text">Sadržaj poruke&#8230;</string>
+    <string name="hall_call_predefined">Predefinisane poruke:</string>
+    <string name="hall_call_predefined_call">Nazovite</string>
+    <string name="hall_call_predefined_come">Dođite</string>
+
+    <string name="hall_consumption">Potrošnja</string>
+    <string name="hall_consum_date_from">Datum od:</string>
+    <string name="hall_consum_date_to">do:</string>
+    <string name="hall_consum_filter">Filter:</string>
+    <string name="hall_consum_sort">Sortiranje:</string>
+    <string name="hall_consum_sort_order">Porudžbine</string>
+    <string name="hall_consum_sort_bev">Pića</string>
+    <string name="hall_consum_button_show">Prikaži</string>
+    <string name="hall_consum_amount">Količina:</string>
+
+    <string name="consum_send_mail_btn">Izvezi i pošalji</string>
+    <string name="consum_sheet_name">Izveštaj potrošnje</string>
+    <string name="consum_empty_list_msg">Podaci moraju biti prikazani da bi se izvezli u Excel tabelu i poslali mail klijentom.</string>
+    <string name="consum_spinner_all_companies">Sve kompanije</string>
+    <string name="consum_date_range_err_msg">Datum mora biti u intervalu od 90 dana.</string>
+    <string name="consum_edit_date_err_msg">Unesite oba datuma.</string>
+    <string name="consum_date_negative_err_msg">Drugi datum mora biti veći ili jednak prvom.</string>
+    <string name="consum_no_orders_err_msg">Za ovaj odabir nema porudžbina.</string>
+    <string name="consum_email_msg">Izveštaj o potrošnji pića iz aplikacije eCafe.</string>
+
+    <string name="consum_sheet_column1">Broj porudžbine</string>
+    <string name="consum_sheet_column2">Stavka</string>
+    <string name="consum_sheet_column3">Naziv pića</string>
+    <string name="consum_sheet_column4">Količina</string>
+    <string name="consum_sheet_column5">Prostorija</string>
+    <string name="consum_sheet_column6">Datum i vreme</string>
+    <string name="consum_sheet_column7">Kompanija</string>
+
+    <string-array name="sort_entries">
+        <item>Porudžbine</item>
+        <item>Pića</item>
+    </string-array>
+
+    <string-array name="size_values">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string name="user_calls_dialog_title">Poruke korisnika</string>
+    <string name="user_calls_dialog_notice">Poruke koje označite će pritiskom na dugme \'AŽURIRAJ OZNAČENE\' biti ažurirane kao pročitane i uklonjene sa liste. \nDugme \'AŽURIRAJ SVE\' će isto uraditi sa svim stavkama liste bez obzira da li su označene.</string>
+    <string name="user_calls_btn_update_all">Ažuriraj sve</string>
+    <string name="user_calls_btn_update_checked">Ažuriraj označene</string>
+
+</resources>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mkitbs.ekitchen.app.kitchen.ConsumptionActivity">
+
+    <LinearLayout
+        android:id="@+id/filterBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:paddingTop="20dp"
+        android:padding="10dp"
+        android:background="@color/md_blue_50"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textDateFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:paddingEnd="10dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="@string/hall_consum_date_from"/>
+
+        <EditText
+            android:id="@+id/editDateFrom"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:inputType="date"
+            android:focusable="false"
+            android:background="@drawable/custom_edittext"/>
+
+        <TextView
+            android:id="@+id/textDateTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:paddingEnd="10dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="@string/hall_consum_date_to"/>
+
+        <EditText
+            android:id="@+id/editDateTo"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:inputType="date"
+            android:focusable="false"
+            android:background="@drawable/custom_edittext"/>
+
+        <TextView
+            android:id="@+id/textFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:paddingEnd="10dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="@string/hall_consum_filter"/>
+
+        <Spinner
+            android:id="@+id/spinnerCompanyFilter"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/custom_spinner_selector"/>
+
+        <TextView
+            android:id="@+id/textSort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:paddingEnd="10dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="@string/hall_consum_sort"/>
+
+        <Spinner
+            android:id="@+id/spinnerSortFilter"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/custom_spinner_selector"/>
+
+        <Button
+            android:id="@+id/exportXLSandMailButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/hall_consum_button_show"
+            style="@style/btnStyleGreen"/>
+
+    </LinearLayout>
+
+    <ExpandableListView
+        android:id="@+id/listExpOrdersHall"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_below="@id/filterBox"
+        android:divider="@color/md_grey_300"
+        android:dividerHeight="1dp"
+        android:childDivider="@color/white"/>
+
+    <ExpandableListView
+        android:id="@+id/listExpBevsHall"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_below="@id/filterBox"
+        android:divider="@color/md_grey_300"
+        android:dividerHeight="1dp"
+        android:childDivider="@color/white"/>
+
+</RelativeLayout>

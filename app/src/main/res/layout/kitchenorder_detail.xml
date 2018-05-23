@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/order_detail"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="mkitbs.ekitchen.app.kitchen.KitchenOrderDetailFragment" >
+
+    <RelativeLayout
+        android:id="@+id/detailsDataContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:background="@color/md_grey_50">
+
+        <LinearLayout
+            android:id="@+id/textLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingStart="20dp"
+            android:paddingRight="5dp"
+            android:paddingEnd="5dp"
+            android:paddingBottom="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/statusFrame"
+            android:layout_toStartOf="@+id/statusFrame"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textDetailDateTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/kitchenorder_datetime"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/textDetailLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/kitchenorder_location"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/textDetailUserCustomer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/kitchenorder_username"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/textDetailUserWaiter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/kitchenorder_waiter"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/textDetailNotice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/send_dialog_comment"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/statusFrame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+
+            <mkitbs.ekitchen.app.helpers.StatusButton
+                android:id="@+id/statusToggleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/status_button_selector"/>
+
+            <TextView
+                android:id="@+id/statusToggleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:textSize="17sp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/fabColor"/>
+
+    <ListView
+        android:id="@+id/itemsList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:divider="@color/white"
+        android:dividerHeight="1dp"
+        android:padding="2dp"
+        android:background="@color/colorPrimary"
+        android:layout_gravity="top"/>
+
+
+</LinearLayout>

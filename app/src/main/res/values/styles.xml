@@ -1,0 +1,117 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+
+    </style>
+
+    <!-- Added. -->
+
+    <!-- style for the action bar backgrounds -->
+    <style name="ActionBarCompat" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="titleTextStyle">@style/ActionBarCompat.TitleTextStyle</item>
+    </style>
+
+    <style name="ActionBarCompat.TitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/almost_black</item>
+    </style>
+
+    <style name="TabLayoutTextStyle">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="btnMinus" parent="@android:style/Widget.Button">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/custom_minus_btn_new</item>
+    </style>
+
+    <style name="btnPlus" parent="@android:style/Widget.Button">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/custom_plus_btn_new</item>
+    </style>
+
+    <style name="btnStyleGreen" parent="@android:style/Widget.Button">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/button_send_green</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="btnStyleRed" parent="@android:style/Widget.Button">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/button_cancel_red</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="btnStyleBlue" parent="@android:style/Widget.Button">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/button_main_blue</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="btnStyleFlatMain" parent="@android:style/Widget.Button">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/button_flat_main</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="btnStyleLoginDark" parent="@android:style/Widget.Button">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/button_login_dark</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="OverlayPrimaryColorRed">
+        <item name="colorPrimary">@color/md_red_500</item>
+        <item name="colorPrimaryDark">@color/md_red_700</item>
+    </style>
+
+    <style name="OverlayPrimaryColorGreen">
+        <item name="colorPrimary">@color/md_green_500</item>
+        <item name="colorPrimaryDark">@color/md_green_700</item>
+    </style>
+
+    <style name="OverlayPrimaryColorBlue">
+        <item name="colorPrimary">@color/md_blue_500</item>
+        <item name="colorPrimaryDark">@color/md_blue_700</item>
+    </style>
+
+</resources>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mkitbs.ekitchen.app.SettingsActivity">
+
+    <RelativeLayout
+        android:id="@+id/activity_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:id="@+id/defaultLocationText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/default_location"/>
+
+        <Spinner
+            android:id="@+id/spinnerLocationSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="350dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/defaultLocationText"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/defaultRoomText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@id/spinnerLocationSettings"
+            android:text="@string/default_room"/>
+
+        <Spinner
+            android:id="@+id/spinnerRoomSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="350dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/defaultRoomText"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/changeFABFunction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@id/spinnerRoomSettings"
+            android:text="@string/fab_settings_title"/>
+
+        <RadioGroup
+            android:id="@+id/radioFABFunction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/changeFABFunction"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioMainAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:tag="all"
+                android:text="@string/fab_all"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/radioMainSingle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="single"
+                android:text="@string/fab_single"
+                android:checked="false" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/notificationsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@id/radioFABFunction"
+            android:text="@string/want_notifications"/>
+
+        <RadioGroup
+            android:id="@+id/radioNotifications"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/notificationsText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioYes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:tag="1"
+                android:text="@string/yes"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/radioNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="2"
+                android:text="@string/no"
+                android:checked="false" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/resetText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/radioNotifications"
+            android:text="@string/reset_btn_title"/>
+
+        <Button
+            android:id="@+id/resetLocationRoomButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/resetText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:text="@string/reset_btn"
+            style="@style/btnStyleRed"/>
+
+    </RelativeLayout>
+
+</ScrollView>

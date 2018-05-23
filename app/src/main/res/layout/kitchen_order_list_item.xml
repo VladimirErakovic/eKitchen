@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:background="@drawable/list_selector"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp" >
+
+        <!--  ListRow Left sied Thumbnail image -->
+        <LinearLayout
+            android:id="@+id/thumbnailStatus"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="3dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp">
+
+            <ImageView
+                android:id="@+id/imageStatusIcon"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:gravity="top|center_horizontal"
+                android:contentDescription="@string/status_image_content_description" />
+
+            <TextView
+                android:id="@+id/textStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom|center_horizontal"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/containerTextContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toLeftOf="@id/thumbnailStatus"
+            android:layout_toStartOf="@id/thumbnailStatus">
+
+            <TextView
+                android:id="@+id/textDateTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/kitchenorder_datetime"
+                android:textColor="@color/colorPrimary"
+                android:textSize="19sp"/>
+
+            <TextView
+                android:id="@+id/textLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/fabColor"
+                android:text="@string/kitchenorder_location"
+                android:textSize="19sp"/>
+
+            <TextView
+                android:id="@+id/textUserCustomer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/kitchenorder_username"
+                android:textSize="19sp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
